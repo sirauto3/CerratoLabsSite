@@ -360,13 +360,6 @@ h3 {
   box-shadow: 0 0 34px rgba(255, 79, 216, 0.18);
 }
 
-.studio-note {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1fr);
-  align-items: center;
-  gap: 28px;
-}
-
 .card p,
 .copy p,
 .list li {
@@ -450,8 +443,7 @@ h3 {
     min-height: auto;
   }
 
-  .studio-hero-inner,
-  .studio-note {
+  .studio-hero-inner {
     grid-template-columns: 1fr;
   }
 
