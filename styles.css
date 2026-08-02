@@ -62,12 +62,13 @@ a {
 }
 
 .brand-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  background:
-    linear-gradient(135deg, var(--pink), var(--cyan) 52%, var(--lime));
-  box-shadow: 0 0 24px rgba(76, 231, 255, 0.28);
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 24px rgba(76, 231, 255, 0.24);
 }
 
 .nav-links {
