@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shape Chaser - Cerrato Labs</title>
-    <meta name="description" content="Shape Chaser is a bright offline iPhone strategy game from Cerrato Labs.">
+    <title>Cerrato Labs</title>
+    <meta name="description" content="Cerrato Labs is an independent app studio building playful iPhone games and privacy-first family tools.">
     <link rel="canonical" href="https://cerratolabs.com/">
-    <meta property="og:title" content="Shape Chaser - Cerrato Labs">
-    <meta property="og:description" content="A bright offline iPhone strategy game about sending tiny shapes, capturing rival bubbles, and unlocking colorful worlds.">
+    <meta property="og:title" content="Cerrato Labs">
+    <meta property="og:description" content="An independent app studio building playful iPhone games and privacy-first family tools.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cerratolabs.com/">
     <link rel="stylesheet" href="styles.css">
@@ -20,56 +20,77 @@
           <span>Cerrato Labs</span>
         </a>
         <div class="nav-links">
+          <a href="#projects">Projects</a>
           <a href="/shape-chaser/">Shape Chaser</a>
-          <a href="/privacy-shape-chaser/">Privacy</a>
           <a href="/support/">Support</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-inner">
-          <div class="eyebrow">Cerrato Labs presents</div>
-          <h1>Shape Chaser</h1>
-          <p class="lead">A bright offline iPhone strategy game about sending tiny shapes, capturing rival bubbles, and unlocking colorful worlds.</p>
-          <div class="meta">
-            <span class="pill">Offline</span>
-            <span class="pill">Strategy</span>
-            <span class="pill">No account</span>
-            <span class="pill">No ads in v1.0</span>
+      <section class="studio-hero">
+        <div class="studio-hero-inner">
+          <div class="studio-copy">
+            <div class="eyebrow">Independent app studio</div>
+            <h1>Cerrato Labs</h1>
+            <p class="lead">Small, bright iPhone apps built with a bias for privacy, play, and simple ideas that feel good in your hands.</p>
+            <div class="meta">
+              <span class="pill">iPhone first</span>
+              <span class="pill">Playful games</span>
+              <span class="pill">Family utilities</span>
+              <span class="pill">Privacy-minded</span>
+            </div>
+            <div class="actions">
+              <a class="button primary" href="#projects">View projects</a>
+              <a class="button" href="/support/">Contact</a>
+            </div>
           </div>
-          <div class="actions">
-            <a class="button primary" href="/shape-chaser/">Explore the game</a>
-            <a class="button" href="/support/">Contact Support</a>
+
+          <div class="studio-mark-panel" aria-hidden="true">
+            <img class="studio-logo" src="/assets/cerrato-labs-mascot-badge-active-512.png" alt="">
+            <div class="signal-row">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="band">
+      <section class="band" id="projects">
         <div class="wrap">
           <div class="section-head">
-            <div class="eyebrow">Quick strategy</div>
-            <h2>Tiny shapes, big momentum.</h2>
-            <p class="lead">Pick a source bubble, send chasers across the board, reinforce your side, and capture every rival bubble before the board turns against you.</p>
+            <div class="eyebrow">Projects</div>
+            <h2>Apps in the lab.</h2>
+            <p class="lead">Cerrato Labs is starting with one polished launch candidate, then expanding into family tools and more experimental games.</p>
           </div>
 
-          <div class="grid two">
-            <article class="card">
+          <div class="grid projects-grid">
+            <article class="card project-card featured-project">
               <img src="assets/shape-chaser-gameplay.png" alt="Shape Chaser gameplay with colorful capture bubbles">
               <div class="card-body">
-                <h3>Capture the board</h3>
-                <p>Every launch spends a point from your source. Time your attacks, hold your stronger bubbles, and flip rival spaces before they recover.</p>
-                <a class="button" href="/shape-chaser/">App page</a>
+                <div class="project-label">Launch candidate</div>
+                <h3>Shape Chaser</h3>
+                <p>A bright offline strategy game about sending tiny shapes, reinforcing your side, and capturing rival bubbles across themed worlds.</p>
+                <a class="button primary" href="/shape-chaser/">Open project</a>
               </div>
             </article>
 
-            <article class="card">
-              <img src="assets/shape-chaser-map.png" alt="Shape Chaser campaign map">
+            <article class="card project-card">
               <div class="card-body">
-                <h3>Unlock themed worlds</h3>
-                <p>Move through neon grids, bubble fields, icy peaks, galaxy maps, and more as each world adds new layouts and difficulty.</p>
-                <a class="button" href="/privacy-shape-chaser/">Privacy policy</a>
+                <div class="project-icon">LW</div>
+                <div class="project-label">Planned family utility</div>
+                <h3>Little Wins List</h3>
+                <p>A local-first chore and reward tracker for families, designed around calm setup, privacy, and everyday progress.</p>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="card-body">
+                <div class="project-icon">BD</div>
+                <div class="project-label">Prototype game</div>
+                <h3>BeatEmUpDawg</h3>
+                <p>A scrappy arcade brawler prototype being held for more experimentation before it becomes a release candidate.</p>
               </div>
             </article>
           </div>
@@ -77,27 +98,23 @@
       </section>
 
       <section class="band alt">
-        <div class="wrap">
-          <div class="section-head">
-            <div class="eyebrow">Launch posture</div>
-            <h2>Built small, bright, and low-friction.</h2>
-            <p class="lead">Shape Chaser is being prepared as a simple offline game with no required account, no third-party ads, and no tracking SDKs in the first release.</p>
+        <div class="wrap studio-note">
+          <div>
+            <div class="eyebrow">Operating idea</div>
+            <h2>Ship small, learn honestly, keep it humane.</h2>
           </div>
-
-          <div class="grid">
-            <div class="card">
-              <div class="card-body">
-                <h3>Play offline</h3>
-                <p>Progress and settings are planned to stay local to the device in the first release.</p>
+          <div class="card">
+            <div class="card-body">
+              <p>Cerrato Labs is built around focused releases: launch one app, listen carefully, improve what users actually understand and enjoy, then decide what deserves the next round of effort.</p>
+              <div class="actions">
+                <a class="button" href="/support/">Support</a>
+                <a class="button" href="/privacy-shape-chaser/">Shape Chaser privacy</a>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <h3>No account required</h3>
-                <p>The game is designed for quick sessions without signups, profiles, or cloud setup.</p>
-              </div>
-            </div>
-            <div class="card">
+          </div>
+        </div>
+      </section>
+    </main>
               <div class="card-body">
                 <h3>Clear support</h3>
                 <p>Support and privacy pages are available before App Store submission.</p>
