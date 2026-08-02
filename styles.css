@@ -392,6 +392,19 @@ h3 {
   padding-top: 110px;
 }
 
+.projects-hero {
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 78% 16%, rgba(136, 255, 77, 0.12), transparent 28%),
+    radial-gradient(circle at 14% 30%, rgba(255, 79, 216, 0.16), transparent 26%),
+    linear-gradient(135deg, #080b17, #131a32 58%, #081421);
+}
+
+.projects-hero .wrap {
+  padding-top: 110px;
+  padding-bottom: 62px;
+}
+
 .legal {
   max-width: 860px;
 }
