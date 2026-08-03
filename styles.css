@@ -432,6 +432,107 @@ h3 {
   display: none;
 }
 
+.demo-level-band {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 79, 216, 0.13), transparent 30%),
+    radial-gradient(circle at 84% 58%, rgba(76, 231, 255, 0.13), transparent 28%),
+    linear-gradient(180deg, #090d1d, #101428);
+}
+
+.demo-level-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(240px, 360px);
+  align-items: center;
+  gap: 46px;
+}
+
+.demo-level-copy {
+  min-width: 0;
+}
+
+.demo-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.demo-steps span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: #f8fbff;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 0.84rem;
+  font-weight: 900;
+}
+
+.demo-level-frame {
+  justify-self: end;
+  width: min(100%, 340px);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03)),
+    rgba(5, 8, 20, 0.82);
+  box-shadow:
+    0 34px 80px rgba(0, 0, 0, 0.36),
+    0 0 50px rgba(255, 79, 216, 0.16),
+    0 0 54px rgba(76, 231, 255, 0.12);
+}
+
+.demo-reel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 420 / 910;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #050814;
+}
+
+.demo-reel-frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: demoReel 12s infinite ease-in-out;
+}
+
+.demo-reel-frame:nth-child(2) {
+  animation-delay: 2.4s;
+}
+
+.demo-reel-frame:nth-child(3) {
+  animation-delay: 4.8s;
+}
+
+.demo-reel-frame:nth-child(4) {
+  animation-delay: 7.2s;
+}
+
+.demo-reel-frame:nth-child(5) {
+  animation-delay: 9.6s;
+}
+
+@keyframes demoReel {
+  0%,
+  18% {
+    opacity: 1;
+  }
+
+  24%,
+  100% {
+    opacity: 0;
+  }
+}
+
 .projects-hero {
   border-top: 1px solid var(--line);
   background:
@@ -513,6 +614,16 @@ h3 {
     width: min(300px, 86vw);
   }
 
+  .demo-level-wrap {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .demo-level-frame {
+    justify-self: center;
+    width: min(300px, 86vw);
+  }
+
   .wrap {
     padding: 52px 0;
   }
@@ -525,5 +636,14 @@ h3 {
 
   .title-preview-motion-static {
     display: block;
+  }
+
+  .demo-reel-frame {
+    animation: none;
+    opacity: 0;
+  }
+
+  .demo-reel-frame:first-child {
+    opacity: 1;
   }
 }
