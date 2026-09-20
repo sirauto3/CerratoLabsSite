@@ -471,9 +471,9 @@ h3 {
 
 .demo-level-wrap {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(240px, 360px);
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 420px);
   align-items: center;
-  gap: 46px;
+  gap: 56px;
 }
 
 .demo-level-copy {
@@ -502,7 +502,7 @@ h3 {
 
 .tutorial-phone-frame {
   justify-self: end;
-  width: min(100%, 340px);
+  width: min(100%, 420px);
   padding: 10px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -516,25 +516,24 @@ h3 {
 }
 
 .tutorial-mini-screen {
-  --tutorial-coral: #ff2fca;
-  --tutorial-coral-dark: #8d1377;
-  --tutorial-aqua: #25d9f3;
-  --tutorial-aqua-dark: #157b95;
-  --tutorial-yellow: #fff200;
+  --tutorial-coral: #ff058c;
+  --tutorial-magenta: #ff05db;
+  --tutorial-coral-dark: #53125f;
+  --tutorial-aqua: #00f0ff;
+  --tutorial-aqua-dark: #172d7d;
+  --tutorial-yellow: #fff50a;
   --tutorial-cream: #f3f2ff;
-  --tutorial-panel: rgba(29, 24, 76, 0.72);
+  --tutorial-panel: rgba(37, 27, 86, 0.78);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   width: 100%;
-  min-height: 640px;
-  padding: 18px 16px;
+  min-height: 760px;
+  padding: 22px 18px 18px;
   border-radius: 6px;
-  background:
-    radial-gradient(circle at 18% 0%, rgba(255, 47, 202, 0.20), transparent 32%),
-    radial-gradient(circle at 86% 34%, rgba(37, 217, 243, 0.18), transparent 32%),
-    linear-gradient(180deg, #050842 0%, #08043b 54%, #16044c 100%);
+  background: linear-gradient(180deg, #03083d 0%, #080047 58%, #160044 100%);
   overflow: hidden;
+  font-family: ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold", system-ui, sans-serif;
 }
 
 .tutorial-mini-header {
@@ -546,43 +545,27 @@ h3 {
 
 .tutorial-mini-title {
   color: #ffffff;
-  font-size: 1.9rem;
-  line-height: 0.95;
+  font-size: 2.25rem;
+  line-height: 1;
   font-weight: 950;
 }
 
 .tutorial-mini-subtitle {
-  margin-top: 5px;
+  margin-top: 7px;
   color: rgba(255, 255, 255, 0.58);
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   font-weight: 900;
-}
-
-.tutorial-mini-close {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  font-size: 1.4rem;
-  font-weight: 950;
 }
 
 .tutorial-stage-web {
   position: relative;
   width: 100%;
-  aspect-ratio: 1.08 / 1;
+  aspect-ratio: 1.16 / 1;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 28px;
   background:
-    radial-gradient(circle at 18% 70%, rgba(255, 47, 202, 0.20), transparent 18%),
-    radial-gradient(circle at 82% 28%, rgba(37, 217, 243, 0.18), transparent 19%),
-    linear-gradient(135deg, #071344, #11184f 50%, #271044);
-  border: 1px solid rgba(255, 255, 255, 0.13);
+    linear-gradient(135deg, rgba(4, 19, 58, 0.96), rgba(16, 30, 78, 0.92) 52%, rgba(42, 10, 62, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .tutorial-bg-dot,
@@ -596,61 +579,72 @@ h3 {
 
 .tutorial-bg-dot {
   border-radius: 50%;
-  background: rgba(37, 217, 243, 0.13);
+  background: rgba(0, 240, 255, 0.12);
 }
 
 .dot-1 {
   left: 8%;
-  top: 16%;
-  width: 12px;
-  height: 12px;
+  top: 12%;
+  width: 10px;
+  height: 10px;
 }
 
 .dot-2 {
-  left: 29%;
-  top: 17%;
-  width: 14px;
-  height: 14px;
+  left: 31%;
+  top: 43%;
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 5, 219, 0.12);
 }
 
 .dot-3 {
-  left: 83%;
-  top: 58%;
-  width: 38px;
-  height: 38px;
-  background: rgba(37, 217, 243, 0.10);
+  left: 54%;
+  top: 74%;
+  width: 24px;
+  height: 24px;
 }
 
 .dot-4 {
-  left: 6%;
-  top: 68%;
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 47, 202, 0.14);
+  left: 77%;
+  top: 31%;
+  width: 31px;
+  height: 31px;
+  background: rgba(255, 5, 219, 0.12);
 }
 
 .dot-5 {
-  left: 47%;
-  top: 60%;
-  width: 26px;
-  height: 26px;
-  background: rgba(255, 47, 202, 0.14);
+  left: 16%;
+  top: 19%;
+  width: 10px;
+  height: 10px;
 }
 
 .dot-6 {
-  left: 67%;
-  top: 45%;
-  width: 34px;
-  height: 34px;
-  background: rgba(37, 217, 243, 0.12);
+  left: 39%;
+  top: 19%;
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 5, 219, 0.12);
+}
+
+.dot-7 { left: 62%; top: 50%; width: 24px; height: 24px; }
+.dot-8 { left: 85%; top: 81%; width: 31px; height: 31px; background: rgba(255, 5, 219, 0.12); }
+.dot-9 { left: 24%; top: 38%; width: 10px; height: 10px; }
+.dot-10 { left: 47%; top: 69%; width: 17px; height: 17px; background: rgba(255, 5, 219, 0.12); }
+.dot-11 { left: 70%; top: 26%; width: 24px; height: 24px; }
+.dot-12 { left: 9%; top: 57%; width: 31px; height: 31px; background: rgba(255, 5, 219, 0.12); }
+.dot-13 { left: 32%; top: 14%; width: 10px; height: 10px; }
+.dot-14 { left: 55%; top: 45%; width: 17px; height: 17px; background: rgba(255, 5, 219, 0.12); }
+.dot-15 { left: 78%; top: 76%; width: 24px; height: 24px; }
+.dot-16 { left: 17%; top: 33%; width: 31px; height: 31px; background: rgba(255, 5, 219, 0.12); }
 }
 
 .tutorial-route {
   z-index: 1;
-  height: 6px;
+  height: 5px;
   border-radius: 999px;
   transform-origin: left center;
-  background: repeating-linear-gradient(90deg, rgba(255, 47, 202, 0.62) 0 10px, transparent 10px 22px);
+  background: repeating-linear-gradient(90deg, rgba(255, 5, 140, 0.62) 0 8px, transparent 8px 18px);
 }
 
 .route-home-neutral {
@@ -673,14 +667,12 @@ h3 {
   z-index: 3;
   display: grid;
   place-items: center;
-  width: 76px;
-  height: 76px;
+  width: 20%;
+  aspect-ratio: 1;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  box-shadow:
-    inset 0 0 0 7px rgba(255, 255, 255, 0.12),
-    0 10px 26px rgba(0, 0, 0, 0.34);
+  box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 10px 26px rgba(0, 0, 0, 0.34);
 }
 
 .tutorial-node::before {
@@ -702,12 +694,11 @@ h3 {
 .node-home {
   left: 17%;
   top: 70%;
-  width: 88px;
-  height: 88px;
+  width: 28%;
   background:
-    radial-gradient(circle at 44% 34%, rgba(255, 255, 255, 0.20), transparent 32%),
+    radial-gradient(circle at 38% 28%, rgba(255, 255, 255, 0.26), transparent 24%),
     linear-gradient(135deg, var(--tutorial-coral), var(--tutorial-coral-dark));
-  border: 6px solid var(--tutorial-coral);
+  border: 5px solid var(--tutorial-magenta);
   animation: nodeHomeGlow 8.8s infinite;
 }
 
@@ -717,7 +708,7 @@ h3 {
   background:
     radial-gradient(circle at 44% 34%, rgba(255, 255, 255, 0.34), transparent 34%),
     linear-gradient(135deg, #f6f4ff, #c8c9d5);
-  border: 6px solid rgba(255, 255, 255, 0.76);
+  border: 5px solid rgba(255, 255, 255, 0.76);
   animation: nodeNeutralGlow 8.8s infinite;
 }
 
@@ -728,12 +719,11 @@ h3 {
 .node-rival {
   left: 83%;
   top: 28%;
-  width: 82px;
-  height: 82px;
+  width: 22%;
   background:
     radial-gradient(circle at 44% 34%, rgba(255, 255, 255, 0.25), transparent 33%),
     linear-gradient(135deg, var(--tutorial-aqua), var(--tutorial-aqua-dark));
-  border: 6px solid var(--tutorial-aqua);
+  border: 5px solid var(--tutorial-aqua);
   animation: nodeRivalGlow 8.8s infinite;
 }
 
@@ -745,8 +735,8 @@ h3 {
   position: absolute;
   left: 18%;
   top: 18%;
-  width: 42%;
-  height: 10px;
+  width: 34%;
+  height: 8%;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.46);
   transform: rotate(-18deg);
@@ -757,7 +747,7 @@ h3 {
   width: 100%;
   height: 100%;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: clamp(1.35rem, 6.8vw, 2.2rem);
   line-height: 1;
   font-weight: 950;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.50);
@@ -859,11 +849,11 @@ h3 {
   z-index: 6;
   left: 50%;
   bottom: 8%;
-  width: min(78%, 250px);
+  width: min(70%, 250px);
   height: 42px;
   color: #ffffff;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 18, 0.36);
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 999px;
 }
@@ -875,7 +865,7 @@ h3 {
   place-items: center;
   padding: 0 12px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.04rem;
   font-weight: 950;
   opacity: 0;
   animation-duration: 8.8s;
@@ -933,13 +923,14 @@ h3 {
 
 .tutorial-mini-row {
   display: grid;
-  grid-template-columns: 38px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 46px minmax(0, 1fr);
+  gap: 12px;
   align-items: center;
-  padding: 11px 12px;
-  border-radius: 8px;
+  min-height: 74px;
+  padding: 12px 14px;
+  border-radius: 22px;
   background: var(--tutorial-panel);
-  border: 1px solid rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .tutorial-mini-row strong,
@@ -950,39 +941,45 @@ h3 {
 .tutorial-mini-row strong {
   margin-bottom: 3px;
   color: #ffffff;
-  font-size: 0.94rem;
+  font-size: 1.02rem;
   line-height: 1.08;
   font-weight: 950;
 }
 
 .tutorial-mini-row div > span {
   color: rgba(255, 255, 255, 0.62);
-  font-size: 0.76rem;
-  line-height: 1.22;
+  font-size: 0.82rem;
+  line-height: 1.28;
   font-weight: 800;
 }
 
 .tutorial-mini-row .tutorial-mini-icon {
   display: grid;
   place-items: center;
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  color: #0a0d18;
-  background: var(--tutorial-yellow);
-  font-size: 0.9rem;
+  color: var(--tutorial-yellow);
+  background: rgba(255, 255, 255, 0.10);
+  font-size: 1.35rem;
   font-weight: 950;
 }
 
+.tutorial-mini-row .tutorial-tap-icon {
+  font-size: 1.55rem;
+}
+
 .tutorial-mini-button {
-  display: grid;
+  display: flex;
   place-items: center;
-  min-height: 48px;
+  justify-content: center;
+  gap: 10px;
+  min-height: 58px;
   margin-top: auto;
-  border-radius: 8px;
+  border-radius: 18px;
   color: #080b14;
   background: var(--tutorial-yellow);
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 950;
 }
 
@@ -1008,20 +1005,20 @@ h3 {
 }
 
 @keyframes nodeHomeGlow {
-  0%, 48% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 0 0 6px rgba(255, 47, 202, 0.22), 0 10px 26px rgba(0, 0, 0, 0.34); }
-  56%, 100% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  0%, 47.9% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 0 0 6px #ffffff, 0 0 0 13px rgba(255, 5, 219, 0.38), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  48%, 100% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 10px 26px rgba(0, 0, 0, 0.34); }
 }
 
 @keyframes nodeNeutralGlow {
-  0%, 47.9% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 0 0 6px rgba(255, 255, 255, 0.18), 0 10px 26px rgba(0, 0, 0, 0.34); }
-  48%, 88% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 0 0 6px rgba(255, 47, 202, 0.22), 0 10px 26px rgba(0, 0, 0, 0.34); }
-  94%, 100% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  0%, 47.9% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.34), 0 0 0 6px var(--tutorial-yellow), 0 0 0 13px rgba(255, 245, 10, 0.30), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  48%, 87.9% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 0 0 6px #ffffff, 0 0 0 13px rgba(255, 5, 219, 0.34), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  88%, 100% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 10px 26px rgba(0, 0, 0, 0.34); }
 }
 
 @keyframes nodeRivalGlow {
-  0%, 47.9% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 10px 26px rgba(0, 0, 0, 0.34); }
-  48%, 87.9% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 0 0 6px rgba(37, 217, 243, 0.25), 0 10px 26px rgba(0, 0, 0, 0.34); }
-  88%, 100% { box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.12), 0 0 0 6px rgba(255, 47, 202, 0.22), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  0%, 47.9% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  48%, 87.9% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 0 0 6px var(--tutorial-yellow), 0 0 0 13px rgba(255, 245, 10, 0.28), 0 10px 26px rgba(0, 0, 0, 0.34); }
+  88%, 100% { box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 0 0 6px #ffffff, 0 0 0 13px rgba(255, 5, 219, 0.34), 0 10px 26px rgba(0, 0, 0, 0.34); }
 }
 
 @keyframes tutorialProjectile {
@@ -1196,7 +1193,7 @@ h3 {
 
   .tutorial-phone-frame {
     justify-self: center;
-    width: min(300px, 86vw);
+    width: min(380px, 92vw);
   }
 
   .wrap {
@@ -1233,6 +1230,14 @@ h3 {
 
   .route-neutral-rival {
     opacity: 0.22;
+  }
+
+  .node-home {
+    box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.42), 0 0 0 6px #ffffff, 0 0 0 13px rgba(255, 5, 219, 0.38), 0 10px 26px rgba(0, 0, 0, 0.34);
+  }
+
+  .node-neutral {
+    box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.25), inset 0 0 0 10px rgba(7, 8, 48, 0.34), 0 0 0 6px var(--tutorial-yellow), 0 0 0 13px rgba(255, 245, 10, 0.30), 0 10px 26px rgba(0, 0, 0, 0.34);
   }
 
   .home-count-8,
